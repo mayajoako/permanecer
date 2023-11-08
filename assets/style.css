@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header {
+    padding: 0 40px;
+    height: 250px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.horarios{
+    padding: 10px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 15px;
+}
+
+.horarios a {
+    background-color: rgba(236, 12, 146, 0.062);
+    color: crimson;
+    
+}
+
+.horarios input {
+    display: none;
+}
+
+.horarios i {
+    font-size: 40px;
+}
+
+.header img {
+    width: 250px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.crono {
+    padding: 25px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.crono--table {
+    border-collapse: collapse;
+}
+
+.crono--table td {
+    padding: 5px;
+    width: 150px;
+    height: 25px;
+    border: solid 2px black;
+}
+
+.crono--table--head {
+    background-color: rgba(227, 207, 156, 0.396);
+}
+
+.crono--table--title {
+    background-color: rgba(227, 207, 156, 0.177);
+}
+
