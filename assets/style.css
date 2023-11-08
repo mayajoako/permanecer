@@ -57,8 +57,11 @@
 
 @media (max-width:720px) {
 
-    .crono--table {
+    .crono {
         margin: 0 10px;
+    }
+
+    .crono--table {
         width: 100%
     }
 }
