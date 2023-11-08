@@ -6,14 +6,16 @@
 }
 
 .header {
-    padding: 0 40px;
     height: 250px;
     width: 100%;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+}
+
+.header img {
+    width: 250px;
 }
 
 .horarios{
@@ -38,19 +40,9 @@
     font-size: 40px;
 }
 
-.header img {
-    width: 250px;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .crono {
-    padding: 25px;;
+    width: 100%;
+    padding: 50px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,3 +70,10 @@ body {
     background-color: rgba(227, 207, 156, 0.177);
 }
 
+.conexiones {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
