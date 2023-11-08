@@ -41,7 +41,7 @@
 }
 
 .crono {
-    margin: 0 10px;
+    margin: 0 25px;
     padding: 50px 0 0 0;
     display: flex;
     justify-content: center;
@@ -52,8 +52,14 @@
 }
 
 .crono--table {
-    width: 100%;
+    width: 50%;
     border-collapse: collapse;
+}
+
+@media (max-width:720px) {
+    .crono--table {
+        width: 100%
+    }
 }
 
 .crono--table td {
