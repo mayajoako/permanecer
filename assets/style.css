@@ -27,7 +27,7 @@
 .horarios a {
     background-color: rgba(236, 12, 146, 0.062);
     color: crimson;
-
+    
 }
 
 .horarios input {
@@ -40,6 +40,13 @@
 
 .header img {
     width: 250px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .crono {
