@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
     text-decoration: none;
     list-style-type: none;
 }
@@ -10,15 +11,17 @@
     width: 100%;
     background-color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .header img {
-    width: 250px;
+    width: 200px;
 }
 
-.horarios{
+.redes{
     padding: 10px;
     position: fixed;
     bottom: 25px;
@@ -26,17 +29,17 @@
     border-radius: 15px;
 }
 
-.horarios a {
+.redes a {
     background-color: rgba(236, 12, 146, 0.062);
     color: crimson;
     
 }
 
-.horarios input {
+.redes input {
     display: none;
 }
 
-.horarios i {
+.redes i {
     font-size: 40px;
 }
 
@@ -51,11 +54,11 @@
 }
 
 .crono--table {
-    width: 50%;
+    width: 70%;
     border-collapse: collapse;
 }
 
-@media (max-width:720px) {
+@media (max-width:920px) {
 
     .crono {
         margin: 0 10px;
@@ -69,7 +72,7 @@
 .crono--table td {
     padding: 5px;
     width: 150px;
-    height: 25px;
+    height: 40px;
     border: solid 2px black;
 }
 
@@ -80,6 +83,45 @@
 .crono--table--title {
     background-color: rgba(227, 207, 156, 0.177);
 }
+
+.estudios {
+    margin: 50px 0 0 0;
+    padding: 25px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.estudios input {
+    display: none;
+}
+
+.estudios i {
+    font-size: 50px;
+    color: black;
+}
+
+.estudios--info a {
+    padding: 5px 125px;
+    border-radius: 15px;
+    width: 450px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(227, 207, 156, 0.43);
+    gap: 30px;
+}
+
+.estudios--info p {
+    font-size: larger;
+    color: black
+}
+
 
 .conexiones {
     margin: 50px;
