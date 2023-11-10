@@ -115,6 +115,16 @@
     align-items: center;
     background-color: rgba(227, 207, 156, 0.43);
     gap: 30px;
+    text-align: center;
+}
+
+@media (max-width: 920px) {
+    .estudios--info a {
+        width: 350px;
+        height: 75px;
+    }
+    
+
 }
 
 .estudios--info p {
