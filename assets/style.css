@@ -13,7 +13,7 @@
 }
 
 .header {
-    height: 250px;
+    height: 150px;
     width: 100%;
     background-color: black;
     display: flex;
@@ -24,7 +24,7 @@
 }
 
 .header img {
-    width: 200px;
+    width: 150px;
 }
 
 .redes{
@@ -83,7 +83,7 @@
 }
 
 .crono--table--head {
-    background-color: rgba(227, 207, 156, 0.396);
+    background-color: #a7a7a7;
 }
 
 .crono--table--title {
@@ -91,10 +91,11 @@
 }
 
 .estudios {
-    margin: 50px 0 0 0;
+    margin: 50px 10px 0 10px;
     padding: 25px;
-    background-color: black;
-    color: white;
+    border-radius: 10px;
+    background-color: #171717;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +110,7 @@
 
 .estudios i {
     font-size: 50px;
-    color: black;
+    color: #171717;
 }
 
 .estudios--info a {
@@ -120,7 +121,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(227, 207, 156, 0.43);
+    background-color: #a7a7a7;
 }
 
 @media (max-width: 920px) {
@@ -134,7 +135,7 @@
 
 .estudios--info p {
     font-size: larger;
-    color: black
+    color: #171717
 }
 
 
@@ -144,4 +145,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.playlist {
+    margin: 50px 10px 0 10px;
 }
