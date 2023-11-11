@@ -10,6 +10,7 @@
 
 :root {
     font-family: 'Shippori Antique B1', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -30,7 +31,7 @@
 .redes{
     padding: 10px;
     position: fixed;
-    bottom: 40px;
+    bottom: 25px;
     right: 25px;
     border-radius: 15px;
 }
@@ -170,7 +171,6 @@
 .footer--info ul {
     display: flex;
     gap: 70px;
-    flex-wrap: wrap;
 }
 
 .footer--info li {
@@ -180,4 +180,16 @@
 
 .footer--info a {
     color: #a7a7a7;
+}
+
+@media (max-width:920px) {
+
+    .footer--info {
+        height: 250px;
+    }
+
+    .footer--info ul {
+        flex-direction: column;
+        gap: 25px;
+    }
 }
