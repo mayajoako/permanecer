@@ -115,12 +115,12 @@
 }
 
 .estudios--info a {
-    padding: 5px 100px;
+    padding: 10px 20px;
     border-radius: 15px;
     width: 450px;
     height: 75px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #a7a7a7;
     transition: all .5s ease;
@@ -179,7 +179,7 @@
 }
 
 .footer--info a {
-    color: #a7a7a7;
+    color: white;
 }
 
 @media (max-width:920px) {
