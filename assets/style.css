@@ -212,11 +212,11 @@
     }
 
     .estudios--info {
-        width: 350x;
+        width: 400x;
         height: 75px;
     }
 
-    .letrasyacordes--box {
+    .estudios--info--box {
         gap: 15px;
     }
     
