@@ -65,17 +65,6 @@
     border-collapse: collapse;
 }
 
-@media (max-width:920px) {
-
-    .crono {
-        margin: 0 10px;
-    }
-
-    .crono--table {
-        width: 100%
-    }
-}
-
 .crono--table td {
     padding: 5px;
     width: 150px;
@@ -95,14 +84,14 @@
     margin: 50px 10px 0 10px;
     padding: 25px;
     border-radius: 10px;
-    background-color: #171717;
-    color: #fff;
+    background-color: #e31b1b0b;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    gap: 10px;
+    gap: 25px;
 }
 
 .estudios input {
@@ -114,7 +103,7 @@
     color: #171717;
 }
 
-.estudios--info a {
+.estudios--info {
     padding: 10px 20px;
     border-radius: 15px;
     width: 450px;
@@ -122,29 +111,52 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #a7a7a7;
+    background-color: #b82c2cbd ;
+    box-shadow: 10px 10px 21px 0px rgba (41,124,124,0.34);
+    -webkit-box-shadow: 10px 10px 21px 0px #b82c2c6b;
+    -moz-box-shadow: 10px 10px 21px 0px #b82c2c6b;
     transition: all .5s ease;
 }
 
-.estudios--info a:hover {
-    background-color: #a7a7a7d0;
+.estudios--info:hover {
+    background-color: #d622229f;
     transition: all .5s ease;
-}
-
-@media (max-width: 920px) {
-    .estudios--info a {
-        width: 350px;
-        height: 75px;
-    }
-    
-
 }
 
 .estudios--info p {
     font-size: larger;
-    color: #171717
+    color: #171717;
 }
 
+.letrasyacordes {
+    background-color: rgba(15, 177, 177, 0.06);
+    color:  black;
+    gap: 25px;
+}
+
+.letrasyacordes--info {
+    background-color: rgba(15, 177, 177, 0.548);
+    box-shadow: 10px 10px 21px 0px rgba (41,124,124,0.34);
+    -webkit-box-shadow: 10px 10px 21px 0px rgba(41,124,124,0.34);
+    -moz-box-shadow: 10px 10px 21px 0px rgba(41,124,124,0.34);
+}
+
+.letrasyacordes--info:hover {
+    background-color: rgba(15, 177, 177, 0.784)
+}
+
+.letrasyacordes p {
+    overflow: hidden;
+}
+
+.letrasyacordes--box {
+    display: flex;
+    gap: 25px;
+}
+
+.letrasyacordes--box i:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
 
 .conexiones {
     margin: 50px;
@@ -182,6 +194,8 @@
     color: white;
 }
 
+
+
 @media (max-width:920px) {
 
     .footer--info {
@@ -192,4 +206,18 @@
         flex-direction: column;
         gap: 25px;
     }
+
+    .estudios--info a {
+        width: 350px;
+        height: 75px;
+    }
+    
+    .crono {
+        margin: 0 10px;
+    }
+    
+    .crono--table {
+        width: 100%
+    }
+    
 }
