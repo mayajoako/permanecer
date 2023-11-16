@@ -73,11 +73,11 @@
 }
 
 .crono--table--head {
-    background-color: #a7a7a7;
+    background-color: #d622229f;
 }
 
 .crono--table--title {
-    background-color: rgba(227, 207, 156, 0.177);
+    background-color: #e31b1b0b;
 }
 
 .estudios {
@@ -101,6 +101,10 @@
 .estudios i {
     font-size: 50px;
     color: #171717;
+}
+
+.estudios i:hover {
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .estudios--info {
@@ -208,8 +212,12 @@
     }
 
     .estudios--info {
-        width: 350px;
+        width: 400x;
         height: 75px;
+    }
+
+    .letrasyacordes--box {
+        gap: 15px;
     }
     
     .crono {
