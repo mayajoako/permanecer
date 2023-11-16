@@ -6,6 +6,7 @@
     box-sizing:border-box;
     text-decoration: none;
     list-style-type: none;
+    /* border: solid red 2px; */
 }
 
 :root {
@@ -212,12 +213,19 @@
     }
 
     .estudios--info {
-        width: 400x;
-        height: 75px;
+        width: 425px;
     }
 
     .estudios--info--box {
         gap: 15px;
+    }
+
+    .estudios--info i {
+        font-size: 30px
+    }
+
+    .estudios--info--box i {
+        font-size: 30px;
     }
     
     .crono {
