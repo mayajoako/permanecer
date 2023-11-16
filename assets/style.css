@@ -134,9 +134,13 @@
     overflow: hidden;
     white-space: nowrap;
     font-size: larger;
-    color: #171717;
-    width: 50%;
+    color: hsl(0, 0%, 9%);
+    width: 80%;
     text-align: left;
+}
+
+.letrasyacordes--info p {
+    width: 50%;
 }
 
 .letrasyacordes {
