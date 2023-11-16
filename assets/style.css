@@ -111,11 +111,12 @@
 .estudios--info {
     padding: 10px 20px;
     border-radius: 15px;
-    width: 450px;
+    width: 700px;
     height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
     background-color: #b82c2cbd ;
     box-shadow: 10px 10px 21px 0px rgba (41,124,124,0.34);
     -webkit-box-shadow: 10px 10px 21px 0px #b82c2c6b;
@@ -129,8 +130,13 @@
 }
 
 .estudios--info p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     font-size: larger;
     color: #171717;
+    width: 50%;
+    text-align: left;
 }
 
 .letrasyacordes {
@@ -150,13 +156,9 @@
     background-color: rgba(15, 177, 177, 0.784)
 }
 
-.letrasyacordes p {
-    overflow: hidden;
-}
-
 .letrasyacordes--box {
     display: flex;
-    gap: 25px;
+    gap: 50px;
 }
 
 .letrasyacordes--box i:hover {
@@ -216,8 +218,8 @@
         width: 375px;
     }
 
-    .estudios--info--box {
-        gap: 15px;
+    .letrasyacordes--box {
+        gap: 25px;
     }
 
     .estudios--info i {
