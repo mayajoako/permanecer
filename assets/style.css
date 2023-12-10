@@ -66,19 +66,26 @@
     border-collapse: collapse;
 }
 
-.crono--table td {
-    padding: 5px;
-    width: 150px;
-    height: 40px;
-    border: solid 2px black;
+.crono--table tr:nth-of-type(2n+3) {
+    background-color: #e31b1b0b;
+}
+
+.crono--table tr:nth-of-type(2n) {
+    background-color: #e31b1b24;
 }
 
 .crono--table--head {
     background-color: #d622229f;
 }
 
-.crono--table--title {
-    background-color: #e31b1b0b;
+.crono--table td {
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    border: solid 2px black;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .estudios {
