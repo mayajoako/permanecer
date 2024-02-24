@@ -99,13 +99,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 
 }
 
 .pasaje-title {
-    margin-top: 40px;
-    padding: 15px;
+    padding: 20px;
     max-width: 500px;
     background: var(--color_alterno);
     border-radius: 15px;
@@ -357,14 +356,14 @@ body {
     }
 
     .main {
-        margin-top: 100px;
+        margin-top: 80px;
         position: static;
         left: 0px;
         top: 110px;
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
 
     }
 
