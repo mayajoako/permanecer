@@ -23,7 +23,7 @@
     --border-bottom: #c7ccd171;
     --btn--studio: #00000054;
     --icon: rgb(0, 0, 0);
-    --contraste: #3b757f;
+    --contraste: #b5afe11b;
     --color_alterno: #54180407;
     
 }
@@ -86,7 +86,7 @@ body {
 }
 
 .main-box {
-    margin: 25px;
+    margin: 20px;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -201,6 +201,10 @@ body {
     width: 200px;
     height: 45px;
     background: var(--contraste);
+    border: solid 2px var(--color_alterno);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(19, 1, 1, 0.285);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(19, 1, 1, 0.285);
+    box-shadow: 5px 5px 5px 0px rgba(19, 1, 1, 0.285);
     border-radius: 17px;
     display: flex;
     justify-content: center;
@@ -285,7 +289,9 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 125;
-    animation: opacity 2s ease-in;
+    animation: opacity 5s ease-in;
+    background:var(--background-to-page);
+    border: solid 2px black;
     
 }
 
