@@ -285,7 +285,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 125;
-    animation: opacity 2.4s ease-in;
+    animation: opacity 2s ease-in;
     
 }
 
@@ -302,7 +302,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     display: block;
-    animation: opacity 1.2s ease-in;
+    animation: opacity 1.5s ease-in;
     border-radius: 15px;
 }
 
