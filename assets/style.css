@@ -119,12 +119,8 @@ body {
 /* REDES DEL GRUPO */
 
 .redes {
-    position: relative;
-    left: 0;
-    margin: 20px 0;
+    margin: 20px;
     padding: 40px;
-    width: 100vw;
-    z-index: -5;
 }
 
 .redes-items {
