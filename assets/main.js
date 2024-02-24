@@ -1,4 +1,5 @@
 
+// Declarando Variables
 
 estudios = document.getElementById("estudios");
 btn_estudios_show = document.getElementById("estudios-show");
@@ -7,6 +8,7 @@ cronograma = document.getElementById("cronograma");
 btn_crono_show = document.getElementById("crono-show");
 btn_crono_hidden = document.getElementById("crono-hidden");
 btn_calendario = document.getElementById("calendario")
+show_page = document.getElementById("to-welcome")
 
 // Mostrar Estudios
 
@@ -69,3 +71,12 @@ function mostrarInicio () {
     btn_crono_show.style.display = "flex";
 }
 
+// Mostrar Pagina
+
+document.getElementById("to-welcome-showpage").addEventListener("click", mostrarIndex);
+
+function mostrarIndex() {
+    
+    show_page.style.display = "none"
+
+}
