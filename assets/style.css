@@ -365,7 +365,7 @@ body {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-bottom: 40px;
+        margin-bottom: 115px;
 
     }
 
@@ -405,7 +405,7 @@ body {
     }
 
     .pasaje-title {
-        max-width: 450px;
+        max-width: 400px;
     }
 
     #cronograma,
