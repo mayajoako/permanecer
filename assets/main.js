@@ -9,6 +9,7 @@ btn_crono_show = document.getElementById("crono-show");
 btn_crono_hidden = document.getElementById("crono-hidden");
 btn_calendario = document.getElementById("calendario")
 show_page = document.getElementById("to-welcome")
+show_spotify_iframe = document.getElementById("show-spotify")
 
 // Mostrar Estudios
 
@@ -78,5 +79,24 @@ document.getElementById("to-welcome-showpage").addEventListener("click", mostrar
 function mostrarIndex() {
     
     show_page.style.display = "none"
+
+}
+
+// Mostrar Iframe de Spotify 
+
+document.getElementById("redes-items-spotify").addEventListener("click", mostraIframeSpotify);
+
+function mostraIframeSpotify() {
+
+    show_spotify_iframe.style.display = "block"
+}
+
+// Cerrar Iframe de Spotify
+
+document.getElementById("show-spotify").addEventListener("click", cerrarIframeSpotify);
+
+function cerrarIframeSpotify() {
+    
+    show_spotify_iframe.style.display = "none"
 
 }
