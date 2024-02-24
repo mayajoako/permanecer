@@ -55,7 +55,6 @@ body {
     padding: 0 70px;
     display: flex;
     justify-content: start;
-
 }
 
 #header img {
@@ -77,36 +76,35 @@ body {
 /* Main y Title */
 
 .main {
-    margin-bottom: 40px;
     position: relative;
     left: 500px;
     top: 110px;
     width: 55vw;
-    
 }
 
 .main-box {
-    margin: 20px;
+    margin-bottom: 20px;
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 25px;
+
 }
 
 .page-title {
-    margin: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 
 }
 
 .pasaje-title {
+    margin-top: 40px;
     padding: 15px;
     max-width: 500px;
     background: var(--color_alterno);
@@ -116,6 +114,51 @@ body {
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
 }
+
+
+/* REDES DEL GRUPO */
+
+.redes {
+    margin: 20px;
+}
+
+.redes-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    transition: all .5s;
+}
+
+.redes-items i:hover {
+    scale: 1.3;
+    transition: all .5s;
+}
+
+.redes-items-ig i {
+    color: rgb(223, 12, 132);
+    font-size: 30px;
+    transition: all .5s;
+}
+
+.redes-items-fb i {
+    color: rgb(43, 40, 123);
+    font-size: 30px;
+    transition: all .5s;
+}
+
+.redes-items-yt i {
+    color: rgb(218, 23, 56);
+    font-size: 30px;
+    transition: all .5s;
+}
+
+#redes-items-spotify i {
+    color: rgb(53, 131, 8);
+    font-size: 30px;
+    transition: all .5s;
+}
+
 
 /* CRONOGRAMA */
 
@@ -226,47 +269,6 @@ body {
     background-color: #F4F4F4;
     border: solid 2px var(--icon);
     transition: all 0.5s ease-in-out;
-}
-
-.redes {
-    margin-top: 40px;
-}
-
-.redes-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    transition: all .5s;
-}
-
-.redes-items i:hover {
-    scale: 1.3;
-    transition: all .5s;
-}
-
-.redes-items-ig i {
-    color: rgb(223, 12, 132);
-    font-size: 30px;
-    transition: all .5s;
-}
-
-.redes-items-fb i {
-    color: rgb(43, 40, 123);
-    font-size: 30px;
-    transition: all .5s;
-}
-
-.redes-items-yt i {
-    color: rgb(218, 23, 56);
-    font-size: 30px;
-    transition: all .5s;
-}
-
-#redes-items-spotify i {
-    color: rgb(53, 131, 8);
-    font-size: 30px;
-    transition: all .5s;
 }
 
 .footer {
@@ -396,6 +398,10 @@ body {
 }
 
 @media (max-width: 920px) {
+
+    .header-elements {
+        justify-content: center;
+    }
 
     #cronograma,
     #estudios {

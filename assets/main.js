@@ -78,8 +78,7 @@ document.getElementById("to-welcome-showpage").addEventListener("click", mostrar
 
 function mostrarIndex() {
     
-    show_page.style.display = "none"
-
+    show_page.style.display = "none";
 }
 
 // Mostrar Iframe de Spotify 
