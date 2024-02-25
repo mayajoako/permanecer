@@ -25,6 +25,7 @@
     --icon: rgb(0, 0, 0);
     --contraste: #b5afe11b;
     --color_alterno: #54180407;
+    --color_alterno-red: #e80f0fd4;
     
 }
 
@@ -115,51 +116,35 @@ body {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
 }
 
+/* Actividades del Grupo */
 
-/* REDES DEL GRUPO */
-
-.redes {
-    margin: 20px;
-    padding: 40px;
-}
-
-.redes-items {
+.actividades {
+    width: 800px;
+    margin: 40px 0;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    gap: 25px;
-    transition: all .5s;
+    cursor: pointer;
 }
 
-.redes-items i:hover {
-    scale: 1.3;
-    transition: all .5s;
+.actividades h2 {
+    width: 400px;
+    padding: 20px;
+    transition: all .7s ease;
+    text-align: end;
 }
 
-.redes-items-ig i {
-    color: rgb(223, 12, 132);
-    font-size: 30px;
-    transition: all .5s;
+.actividades h2:hover {
+    color: var(--color_alterno-red);
+    transition: all .7s ease;
 }
 
-.redes-items-fb i {
-    color: rgb(43, 40, 123);
-    font-size: 30px;
-    transition: all .5s;
+.actividades-items {
+    width: 400px;
+    padding: 20px;
+    border-left: solid 2px var(--color_alterno-red);
+    font-size: 15px;
 }
-
-.redes-items-yt i {
-    color: rgb(218, 23, 56);
-    font-size: 30px;
-    transition: all .5s;
-}
-
-#redes-items-spotify i {
-    color: rgb(53, 131, 8);
-    font-size: 30px;
-    transition: all .5s;
-}
-
 
 /* CRONOGRAMA */
 
@@ -241,6 +226,8 @@ body {
     color: var(--icon);
 }
 
+/* Botones -  */
+
 .btn {
     width: 200px;
     height: 45px;
@@ -272,12 +259,85 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
+/* REDES DEL GRUPO */
+
+.redes {
+    margin: 20px;
+    padding: 20px;
+}
+
+.redes-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    transition: all .5s;
+}
+
+.redes-items i:hover {
+    scale: 1.3;
+    transition: all .5s;
+}
+
+.redes-items-ig i {
+    color: rgb(223, 12, 132);
+    font-size: 30px;
+    transition: all .5s;
+}
+
+.redes-items-fb i {
+    color: rgb(43, 40, 123);
+    font-size: 30px;
+    transition: all .5s;
+}
+
+.redes-items-yt i {
+    color: rgb(218, 23, 56);
+    font-size: 30px;
+    transition: all .5s;
+}
+
+#redes-items-spotify i {
+    color: rgb(53, 131, 8);
+    font-size: 30px;
+    transition: all .5s;
+}
+
+/* Footer - Horario y Direccion */
+
 .footer {
     position: fixed;
     left: 0px;
     bottom: 0px;
     width: 100%;
     display: none;
+}
+
+.footer-horarios,
+.footer-direccion {
+    width: 190px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+}
+
+.footer-horarios p,
+.footer-direccion p {
+    text-align: left;
+    color: black;
+}
+
+
+.footer-horarios i{
+    font-size: 20px;
+    color: var(--icon);
+}
+
+.footer-direccion i {
+    font-size: 25px;
+    color: var(--color_alterno-red);
 }
 
 /* INTRO A LA PAGINA */
@@ -394,6 +454,7 @@ body {
         align-items: center;
         background-color: var(--background-to-page);
         border-top: solid 1px var(--border-bottom);
+        gap: 5px;
     }
 
 }
@@ -407,6 +468,7 @@ body {
     .pasaje-title {
         max-width: 400px;
     }
+
 
     #cronograma,
     #estudios {
@@ -426,6 +488,29 @@ body {
         bottom: 15%;
     }
 
+}
+
+@media (max-width: 720px) {
+
+    .actividades {
+        padding: 20px;
+        width: 600px;
+        gap: 20px;
+    }
+
+    .actividades h2 {
+        padding: 20px;
+        text-align: left;
+        width: auto;
+        border-right: solid 2px var(--color_alterno-red);
+    }
+
+    .actividades-items{
+        padding: 0;
+        display: block;
+        border: none;
+        width: auto;
+    }
 
 }
 
