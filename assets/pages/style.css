@@ -1,0 +1,26 @@
+
+.btn-to-index {
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    margin: 5px;
+    border: solid 2px black;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+
+.btn-to-index a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-to-index i {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.btn-to-index:hover{
+    border: solid 2px var(--background-to-page);
+    transition: all .5s ease;
+}
+

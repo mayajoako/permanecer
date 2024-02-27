@@ -7,9 +7,8 @@ btn_estudios_hidden = document.getElementById("estudios-hidden");
 cronograma = document.getElementById("cronograma");
 btn_crono_show = document.getElementById("crono-show");
 btn_crono_hidden = document.getElementById("crono-hidden");
-btn_calendario = document.getElementById("calendario")
-show_page = document.getElementById("to-welcome")
-show_spotify_iframe = document.getElementById("show-spotify")
+btn_musicos_show = document.getElementById("musicos-show");
+show_spotify_iframe = document.getElementById("show-spotify");
 
 // Mostrar Estudios
 
@@ -60,9 +59,9 @@ function ocultarCrono() {
     btn_crono_show.style.display = "flex";
 }
 
-// Btn Calendario 
+// Mostrar Recursos de Músicos 
 
-document.getElementById("calendario").addEventListener("click", mostrarInicio);
+document.getElementById("musicos-show").addEventListener("click", mostrarInicio);
 
 function mostrarInicio () {
 
@@ -70,15 +69,6 @@ function mostrarInicio () {
     estudios.style.display = "none";
     btn_estudios_show.style.display = "flex";
     btn_crono_show.style.display = "flex";
-}
-
-// Mostrar Pagina
-
-document.getElementById("to-welcome-showpage").addEventListener("click", mostrarIndex);
-
-function mostrarIndex() {
-    
-    show_page.style.display = "none";
 }
 
 // Mostrar Iframe de Spotify 
