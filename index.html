@@ -3,186 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jóvenes Permanecer</title>
-    <link rel="shortcut icon" href="./assets/img/logo/PRMNC White.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/style.css">
+    <title>Permanecer</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/img/logo/PRMNC White.png" type="image/x-icon">
 </head>
 <body>
 
-    <header id="header">
-        <div class="header-elements">
-            <img src="./assets/img/logo/PRMNC White.png" alt="Permanecer 2k">
-        </div>
-    </header>
-    
     <main class="main">
+        <!-- TITTLE AND PASAJE -->
+        <h1></h1>
+        <div class="pasaje-title darkBox" >
+            <p><strong>Juan 15:5</strong></p>
+            <p>Yo soy la vid y ustedes son las ramas. El que permanece en mí, como yo en él, dará mucho fruto; separados de mí no pueden ustedes hacer nada.</p>
+        </div>
 
+        <section class="actividades">
+            <h2>Actividades</h2>
+            <div class="actividades-items">
+                <p class="actividadHidden">Viernes - Taller del Maestro<br>
+                Sábados - Actividad Principal</p>
+            </div>
+        </section>
 
+        <!-- BOTONES -->
 
-            <div class="page-title">
-                <div class="info-title">
-                <h1 class="main-title">Permanecer 2k24</h1>
-                    <p>Grupo de Jóvenes de Trenque Lauquen (BS AS)</p>
-                </div>
-                <div class="pasaje-title">
-                    <p>Juan 15:5</p>
-                    <p>Yo soy la vid y ustedes son las ramas. El que permanece en mí, como yo en él, dará mucho fruto; separados de mí no pueden ustedes hacer nada.</p>
-                </div>
+        <div class="botones">
+            <div class="btn cronoShow">
+               <p>Cronograma</p>
             </div>
 
-            <!-- Actividades Del Grupo -->
+        <div class="btn estudiosShow">
+               <p>Estudios</p>
+            </div>
+        </div>
 
-            <div class="actividades">
-                <h2>Actividades</h2>
-                <div class="actividades-items">
-                    <p>Viernes - Taller del Maestro</p>
-                    <p>Sábados - Actividad Principal</p>
-                </div>
-                
+          <!-- Cronograma -->
 
+        <div id="cronograma">
+            <table class="cronograma--table">
+                <tr>
+                    <td colspan="4">
+                        <h3>Marzo / Abril</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Día</td>
+                    <td>Expone</td>
+                    <td>Dirige</td>
+                </tr>
+                <tr>
+                    <td>Mar 2</td>
+                    <td colspan="2">Jornada - (Pehua)</td>
+                </tr>
+                <tr>
+                    <td>Sáb 6</td>
+                    <td>Nico</td>
+                    <td>Sara</td>
+                </tr>
+                <tr>
+                    <td>Sáb 13</td>
+                    <td colspan="2">Jornada - (30 de Agosto)</td>
+                </tr>
+                <tr>
+                    <td>Sáb 20</td>
+                    <td>Samu</td>
+                    <td>Ados</td>
+                </tr>
+                <tr>
+                    <td>Sáb 27</td>
+                    <td>Joako</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <div class="btn cronoHidden">
+                <p>Ocultar</p>
+            </div>
+        </div>
+
+
+        <!-- Estudios -->
+
+        <div id="estudios">
+            <div class="estudios-title">
+                <h3>Descarga Estudio</h3>
+                <p>Pulsa en el icono (pdf) para descargar</p>
+            </div>
+            <div class="estudios--conteiner">
+                <p>Paso 9 - Mi Iglesia</p>
+                <a href="./assets/Estudios/Nivel 1/Paso 9.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i></a>
+            </div>
+            <div class="estudios--conteiner">
+                <p>Paso 10 - ¡A Testificar!</p>
+                <a href="./assets/Estudios/Nivel 1/Paso 10.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i></a>
+            </div>
+            <div class="estudios--conteiner">
+                <p>Paso 11 - Las Ordenanzas</p>
+                <a href="./assets/Estudios/Nivel 1/Paso 11.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i></a>
+            </div>
+            <div class="estudios--conteiner">
+                <p>Paso 12 - La Familia</p>
+                <a href="./assets/Estudios/Nivel 1/Paso 12.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i></a>
+            </div>
+            <div class="estudios--conteiner">
+                <p>Paso 13 - Siguiendo a Jesús</p>
+                <a href="./assets/Estudios/Nivel 1/Paso 13.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i></a>
+            </div>
+            <div class="btn estudiosHidden">
+                <p>Ocultar</p>
             </div>
 
-             <!-- Cronograma -->
+    
+        </div>
 
-            <div id="crono-show" class="btn">
-                <a href="#cronograma"><p>Cronograma</p></a>
-            </div>
+        <!-- Redes del Grupo -->
 
-            <div id="cronograma">
-                <table class="cronograma--table">
-                    <tr>
-                        <td colspan="4">
-                            <h3>Febrero/Marzo</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Día</td>
-                        <td>Formato</td>
-                        <td>Expone</td>
-                        <td>Dirige</td>
-                    </tr>
-                    <tr>
-                        <td>Sáb 2</td>
-                        <td>Reunión</td>
-                        <td>Seba</td>
-                        <td>Joako</td>
-                    </tr>
-                    <tr>
-                        <td>Sáb 9</td>
-                        <td>Estudio</td>
-                        <td>Nico</td>
-                        <td>Sara</td>
-                    </tr>
-                    <tr>
-                        <td>Sáb 16</td>
-                        <td colspan="3">Jornada para Adolescentes</td>
-                    </tr>
-                    <tr>
-                        <td>Sáb 23</td>
-                        <td colspan="3">Reu Evangelistica - Pablo Rocco</td>
-                    </tr>
-                    <tr>
-                        <td>Sáb 30</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                </table>
-                <div id="crono-hidden" class="btn">
-                    <p>Ocultar</p>
+        <div class="redes">
+            <div class="redes-items">
+                <div class="redes-items-ig">
+                    <a href="https://www.instagram.com/permanecer2k/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="redes-items-fb">
+                    <a href="https://www.facebook.com/permanecer2k" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="redes-items-yt">
+                    <a href="https://www.youtube.com/@jovenesauditorio2K" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div id="redes-items-spotify">
+                    <i class="fa-brands fa-spotify"></i>
                 </div>
             </div>
-
-
-            <!-- Estudios -->
-            <div id="estudios-show" class="btn">
-                <a href="#estudios"><p>Estudios</p></a>
-            </div>
-
-            <div id="estudios">
-                <div class="estudios-title">
-                    <h3>Descarga Estudio</h3>
-                    <p>Pulsa en el icono (pdf) para descargar</p>
-                </div>
-
-                <div class="estudios--conteiner">
-                    <p>Paso 8 - En Comunión Diaria</p>
-                    <a href="./assets/Estudios/Nivel 1/Paso 8.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i></a>
-                </div>
-                <div class="estudios--conteiner">
-                    <p>Paso 9 - Mi Iglesia</p>
-                    <a href="./assets/Estudios/Nivel 1/Paso 9.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i></a>
-                </div>
-                <div class="estudios--conteiner">
-                    <p>Paso 10 - ¡A Testificar!</p>
-                    <a href="./assets/Estudios/Nivel 1/Paso 10.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i></a>
-                </div>
-                <div class="estudios--conteiner">
-                    <p>Paso 11 - Las Ordenanzas</p>
-                    <a href="./assets/Estudios/Nivel 1/Paso 11.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i></a>
-                </div>
-                <div class="estudios--conteiner">
-                    <p>Paso 12 - La Familia</p>
-                    <a href="./assets/Estudios/Nivel 1/Paso 12.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i></a>
-                </div>
-                <div class="estudios--conteiner">
-                    <p>Paso 13 - Siguiendo a Jesús</p>
-                    <a href="./assets/Estudios/Nivel 1/Paso 13.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i></a>
-                </div>
-                <div id="estudios-hidden" class="btn">
-                    <p>Ocultar</p>
-                </div>
-
-        
-            </div>
-
-            <!-- Músicos -->
-            <div id="musicos-show" class="btn">
-                <a  href="./assets/pages/recursos-para-musicos.html"><p>Músicos</p></a>
-            </div>
-
-            <!-- Redes del Grupo -->
-
-            <div class="redes">
-                <div class="redes-items">
-                    <div class="redes-items-ig">
-                        <a href="https://www.instagram.com/permanecer2k/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                    <div class="redes-items-fb">
-                        <a href="https://www.facebook.com/permanecer2k" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    </div>
-                    <div class="redes-items-yt">
-                        <a href="https://www.youtube.com/@jovenesauditorio2K" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                    <div id="redes-items-spotify">
-                        <i class="fa-brands fa-spotify"></i>
-                    </div>
-                </div>
-            </div>
-
-        
+        </div>
+    
     </main>
 
     <footer class="footer">
-            <div class="footer-horarios">
-                <i class="fa-regular fa-clock"></i>
-                <p>Sábados 21:00hs</p>
-            </div>
-            <div class="footer-direccion">
+        <div class="footer-horarios">
+            <i class="fa-regular fa-clock"></i>
+            <p>Sábados 21:00hs</p>
+        </div>
+        <div class="footer-direccion">
+            <a href="https://maps.app.goo.gl/AafP543i2R9UiWnD6">
                 <i class="fa-solid fa-location-dot"></i>
                 <p>Tte. Gral. Uriburu 575</p>
+            </a>
 
-            </div>
+        </div>
     </footer>
 
-    <div id="show-spotify">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2QHX3BOtlJqhHvocf8zgEc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-
-
-    <script src="./assets/main.js"></script>
+    <i id="btn-mode" class="fa-solid fa-moon"></i>
+    <script src="./script.js"></script>
 </body>
 </html>
+

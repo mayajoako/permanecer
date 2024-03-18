@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --black-50: #ffffff;
+    --black-100: #e7e7e7;
+    --black-200: #d1d1d1;
+    --black-300: #b0b0b0;
+    --black-400: #888888;
+    --black-500: #6d6d6d;
+    --black-600: #5d5d5d;
+    --black-700: #4f4f4f;
+    --black-800: #454545;
+    --black-900: #3d3d3d;
+    --black-950: #292929;
+    --alternative-red:rgb(181, 3, 3);
+    --alternative-black: #121212;
+    --alternative-btn: #151E21;
+}
+
+body {
+    background-color: var(--black-50);
+    color: var(--black-950);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .7s ease;
+    text-align: center;
+    z-index: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark {
+    background-color: var(--black-950);
+    color: var(--black-100);
+    transition: all .7s ease;
+}
+
+#btn-mode {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.pasaje-title {
+    margin-top: 40px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 700px;
+    background-color: var(--black-100);
+    -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.26);
+    -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.26);
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.26);
+    border: 2px  var(--black-100);
+    border-radius: 25px;
+    color: #000000;
+    transition: all .7s ease;
+}
+
+.dark-box {
+    /* border-bottom: 2px var(--black-950) solid; */
+    /* border-radius: 0px; */
+    background-color: var(--black-950);
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.15);
+    color: var(--black-50);
+    transition: all .7s ease;
+}
+
+.actividades {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.actividad_red {
+    color: red;
+}
+
+.actividades h2 {
+    padding: 0 20px;
+    border-right: 2px solid red;
+    transition: all .5s;
+}
+
+.actividades h2:hover {
+    color: red;
+    transition: all .5s;
+}
+
+.actividadHidden {
+    transition: all 2.5s;
+    display: none;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.actividadShow {
+    animation: opacity 2.5s;
+
+}
+
+.botones {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.btn {
+    width: 130px;
+    height: 35px;
+    background-color: var(--black-50);
+    border: solid 2px var(--black-100) ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--black-950);
+    -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.26);
+    -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.26);
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.26);
+    transition: .5s all ease;
+    cursor: pointer;
+}
+
+.btnDark {
+    background-color: var(--black-950);
+    color: var(--black-50);
+    border: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+    transition: .5s all ease;
+    border: solid 2px rgba(0, 0, 0, 0.3);
+    
+
+}
+
+.btnDark:hover {
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+.btn a {
+    text-decoration: none;
+    color: var(--black-950);
+}
+
+#cronograma {
+    margin-top: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    display: none;
+}
+
+.changeDisplay {
+    display: flex;
+}
+
+.cronoDark td {
+    margin: 20px;
+    color:var(--black-50);
+    background-color: var(--black-950);  
+}
+
+.cronoDark {
+    border: 2px solid var(--black-50);
+}
+
+#cronograma table {
+   background-color: var(--black-50);
+   border-collapse: collapse;
+   text-align: center;
+   border: 2px solid black ;
+}
+
+#cronograma td {
+    padding: 5px;
+    width: 125px;
+    border-collapse: collapse;
+    border: 2px solid black ;
+}
+
+#cronograma tr {
+    border: 2px solid black ;
+}
+
+#estudios {
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    display: none;
+}
+
+.estudios--conteiner {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    background-color: var(--black-100);
+    border-radius: 15px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.estudiosDark {
+    color: var(--alternative-black);
+}
+
+.estudiosTitleDark {
+    color: var(--black-50);
+}
+
+.estudios--conteiner:hover {
+    background-color: var(--black-300);
+    transition: all 2s ease;
+}
+
+.estudios--conteiner a {
+    color: var(--alternative-black);
+    font-size: 25px;
+}
+
+.redes {
+    margin: 40px 0 120px 0;
+}
+
+.redes-items i:hover {
+    scale: 1.25;
+    transition: all .3s ease;
+}
+
+.redes-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes-items-ig i {
+    color: rgb(236, 11, 109);
+    font-size: 30px;
+    transition: all .3s ease;
+}
+
+.redes-items-fb i {
+    color: blue;
+    font-size: 30px;
+    transition: all .3s ease;
+}
+
+.redes-items-yt i {
+    color: red;
+    font-size: 30px;
+    transition: all .3s ease;
+}
+
+#redes-items-spotify i {
+    color: rgb(3, 159, 3);
+    font-size: 30px;
+    transition: all .3s ease;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color:var(--black-200);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-footer {
+    background-color: var(--black-700);
+}
+
+.footer-horarios,
+.footer-direccion a {
+    width: 200px;
+    display: flex;
+    gap: 10px;
+    color: var(--alternative-black);
+    text-decoration: none;
+}
+
+.footer-direccion i {
+    font-size: 20px;
+    color: var(--alternative-red);
+}
+
+@media (max-width: 920px) {
+    .pasaje-title {
+        width: 500px;
+    }
+}
+
+@media (max-width: 720px) {
+    .pasaje-title {
+        width: 400px;
+    }
+
+    .actividades {
+        display: none;
+    }
+
+    .estudios--conteiner a {
+        color: var(--black-950);
+        font-size: 20px;
+    }
+}
