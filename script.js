@@ -27,7 +27,8 @@ const estudiosHidden = document.querySelector(".estudiosHidden");
 
 
 // Dark Mode
-    btnMode.addEventListener("click", () => {
+
+btnMode.addEventListener("click", () => {
     body.classList.toggle("dark");
     darkBox.classList.toggle("dark-box");
     cronoDark.classList.toggle("cronoDark");
@@ -38,7 +39,31 @@ const estudiosHidden = document.querySelector(".estudiosHidden");
     estudiosShow.classList.toggle("btnDark");
     cronoHidden.classList.toggle("btnDark");
     estudiosHidden.classList.toggle("btnDark");
+
+    if(body.classList.contains("dark")){
+        localStorage.setItem("dark-mode", "enabled")
+    }
+    else {
+        localStorage.setItem("dark-mode", "disabled")
+    }
 })
+
+if (localStorage.getItem("dark-mode")=="enabled") {
+    body.classList.toggle("dark");
+    darkBox.classList.toggle("dark-box");
+    cronoDark.classList.toggle("cronoDark");
+    estudios.classList.toggle("estudiosDark");
+    estudiosTitleDark.classList.toggle("estudiosTitleDark");
+    footer.classList.toggle("dark-footer");
+    cronoShow.classList.toggle("btnDark");
+    estudiosShow.classList.toggle("btnDark");
+    cronoHidden.classList.toggle("btnDark");
+    estudiosHidden.classList.toggle("btnDark");
+}
+else {
+    localStorage.getItem("dark-mode", "disabled")
+}
+
 
 // TITULO DE LA PÁGINA
 
