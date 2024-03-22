@@ -1,6 +1,7 @@
 
 // Selectores
 const body = document.querySelector("body");
+const main = document.querySelector("main");
 const btnMode = document.querySelector("#btn-mode");
 const btnPrimary = document.querySelector(".btn");
 const title = document.querySelector("h1");
@@ -13,7 +14,7 @@ const estudios = document.querySelector("#estudios");
 const estudiosTitleDark = document.querySelector(".estudios-title");
 const footer = document.querySelector(".footer");
 const redesSpotify = document.querySelector(".redes-items-spotify");
-const spotify = document.querySelector(".spotify");
+const spotify = document.querySelector(".spotifyShow");
 const redesIG = document.querySelector(".redes-items-ig")
 const redesFB = document.querySelector(".redes-items-fb")
 const redesYT = document.querySelector(".redes-items-yt")
@@ -102,18 +103,23 @@ cronoHidden.addEventListener("click", () => {
 // Estudios
 
 estudiosShow.addEventListener("click", () => {
-    estudios.style.display="flex"
-    cronograma.style.display="none"
+    estudios.style.display="flex";
+    cronograma.style.display="none";
 })
 
 estudiosHidden.addEventListener("click", () => {
-    estudios.style.display="none"
+    estudios.style.display="none";
 })
 
 // Spotify 
 
-showSpotify.addEventListener("click", () => {
-    spotify.style.display= "block"
-    body.classList.toggle("filter-body")
+redesSpotify.addEventListener("click", () => {
+    spotify.style.display="block";
+    main.style.display="none";
+})
+
+spotify.addEventListener("click", () => {
+    spotify.style.display="none";
+    main.style.display="flex";
 })
 
