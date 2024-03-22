@@ -12,8 +12,11 @@ const cronograma = document.querySelector("#cronograma");
 const estudios = document.querySelector("#estudios");
 const estudiosTitleDark = document.querySelector(".estudios-title");
 const footer = document.querySelector(".footer");
-const showSpotify = document.querySelector("#redes-items-spotify");
+const redesSpotify = document.querySelector(".redes-items-spotify");
 const spotify = document.querySelector(".spotify");
+const redesIG = document.querySelector(".redes-items-ig")
+const redesFB = document.querySelector(".redes-items-fb")
+const redesYT = document.querySelector(".redes-items-yt")
 
 // BOTONES MOSTRAR
 const cronoShow = document.querySelector(".cronoShow");
@@ -39,6 +42,10 @@ btnMode.addEventListener("click", () => {
     estudiosShow.classList.toggle("btnDark");
     cronoHidden.classList.toggle("btnDark");
     estudiosHidden.classList.toggle("btnDark");
+    redesIG.classList.toggle("redes-items-dark");
+    redesFB.classList.toggle("redes-items-dark");
+    redesSpotify.classList.toggle("redes-items-dark");
+    redesYT.classList.toggle("redes-items-dark");
 
     if(body.classList.contains("dark")){
         localStorage.setItem("dark-mode", "enabled")
@@ -59,6 +66,10 @@ if (localStorage.getItem("dark-mode")=="enabled") {
     estudiosShow.classList.toggle("btnDark");
     cronoHidden.classList.toggle("btnDark");
     estudiosHidden.classList.toggle("btnDark");
+    redesIG.classList.toggle("redes-items-dark");
+    redesFB.classList.toggle("redes-items-dark");
+    redesSpotify.classList.toggle("redes-items-dark");
+    redesYT.classList.toggle("redes-items-dark");
 }
 else {
     localStorage.getItem("dark-mode", "disabled")

@@ -18,10 +18,10 @@
     --black-700: #4f4f4f;
     --black-800: #454545;
     --black-900: #3d3d3d;
-    --black-950: #292929;
+    --black-950: #252525;
     --alternative-red:rgb(181, 3, 3);
-    --alternative-black: #242526;
-    --alternative-btn: #151E21;
+    --alternative-black: #252525;
+    --alternative-grey: #3B3B3B;
 }
 
 body {
@@ -97,10 +97,6 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 20px;
-}
-
-.actividad_red {
-    color: red;
 }
 
 .actividades h2 {
@@ -296,10 +292,14 @@ h1 {
     transition: all .3s ease;
 }
 
-#redes-items-spotify i {
+.redes-items-spotify i {
     color: rgb(3, 159, 3);
     font-size: 30px;
     transition: all .3s ease;
+}
+
+.redes-items-dark i {
+    color: var(--black-500);
 }
 
 .footer {
@@ -307,16 +307,32 @@ h1 {
     bottom: 0;
     width: 100%;
     height: 75px;
-    background-color:var(--black-200);
+    background-color:var(--black-50);
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.15);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all .5s ease;
 }
 
 .dark-footer {
-    background-color: var(--black-700);
+    border-top: solid var(--alternative-black);
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.15);
+    background-color: var(--black-950);
+    transition: all .5s ease;
 }
+
+.dark-footer p,
+.dark-footer i {
+    color: var(--black-50);
+}
+
+
 
 .footer-horarios,
 .footer-direccion a {
